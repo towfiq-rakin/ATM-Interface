@@ -26,6 +26,10 @@ public class MainMenuScreen {
             app.setScene(transaction.getScene());
         });
 
+        withdrawButton.setOnAction(e -> {
+            WithdrawScreen withdrawScreen = new WithdrawScreen(app);
+            app.setScene(withdrawScreen.getScene());
+        });
         exitButton.setOnAction(e -> app.getPrimaryStage().close());
 
         VBox vbox = new VBox(10, checkBalanceButton, depositButton, withdrawButton, exitButton);

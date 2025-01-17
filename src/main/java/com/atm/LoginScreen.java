@@ -56,7 +56,7 @@ public class LoginScreen {
     }
 
     boolean accountCheck(String visa){
-        //Lunh Algorithm to check if the account number is valid
+        //Lunh's Algorithm to check if the account number is valid
         int nDigits = visa.length();
         int nSum = 0;
         boolean isSecond = false;
